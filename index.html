@@ -112,6 +112,12 @@
             margin-top: 30px;
         }
 
+        .project-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
         .project-card {
             background-color: #161b22;
             border: 1px solid #30363d;
@@ -119,6 +125,9 @@
             padding: 20px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
             transition: transform 0.2s, border-color 0.2s, box-shadow 0.3s ease;
+            cursor: pointer;
+            height: 100%;
+            box-sizing: border-box;
         }
 
         .project-card:hover {
@@ -149,7 +158,8 @@
 <body>
 
     <nav class="navbar">
-        <a href="#home" class="navbar-brand">sebx140</a>
+        <!-- El nombre ahora apunta a tu perfil de GitHub y se abre en pestaña nueva -->
+        <a href="https://github.com/sebx140" target="_blank" class="navbar-brand">sebx140</a>
         <div class="navbar-menu">
             <a href="#projects" class="navbar-item">Projects</a>
         </div>
@@ -158,20 +168,24 @@
     <div class="container">
         
         <section id="home" class="hero-section">
-            <h1>Bienvenido a mi sitio</h1>
+            <h1>Welcome to my site</h1>
             <p>Coming soon...</p>
         </section>
 
         <section id="projects">
-            <h2>Mis Proyectos</h2>
+            <h2>My Projects</h2>
             <div class="projects-grid">
+                
+                <a href="https://github.com/sebx140/SMTCify" target="_blank" class="project-link">
+                    <div class="project-card">
+                        <h3>SMTCify</h3>
+                        <p>A Minecraft mod that integrates Windows media playback, showing songs and controls directly in-game.</p>
+                    </div>
+                </a>
+
                 <div class="project-card">
-                    <h3>Proyecto 1</h3>
-                    <p>Espacio reservado para mostrar tus futuros proyectos o servidores.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Proyecto 2</h3>
-                    <p>Espacio reservado para otra de tus creaciones.</p>
+                    <h3>Coming Soon</h3>
+                    <p></p>
                 </div>
             </div>
         </section>
